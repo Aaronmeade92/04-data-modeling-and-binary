@@ -10,7 +10,7 @@ We still have to tackle the problem of exporting an edited bitmap file.
 We also have as a stretch goal to write a CLI for our image transformer.
 
 #### Example Strategy 
-0. Read the input bitmap file using the fs module [x]
+1. Read the input bitmap file using the fs module [x]
 0. Parse the bitmap's buffer into object representing a bitmap (using a constructor) [x]
 0. Using metadata from the parsed bitmap object run a transform on the buffer directly (mutate the color or raster data)[x]
 0. Write the mutated buffer to the output file [ ]
