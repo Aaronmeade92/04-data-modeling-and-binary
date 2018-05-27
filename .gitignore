@@ -61,3 +61,7 @@ typings/
 .next
 
 .DS_Store
+
+.vscode
+
+wallaby.js
