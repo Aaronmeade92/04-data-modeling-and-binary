@@ -9,7 +9,11 @@ describe('Parser Module', () => {
 
     readFile(`${__dirname}/../assets/bitmap.bmp`, (err, buffer) => {
       expect(err).toBeNull();
-      const bp = inverter(buffer);
+      const bp = parser(buffer);
+      console.log(bp);
+      console.log(buffer);
+      const invertedImage = inverter(bp);
+      console.log(invertedImage);
       expect(bp).toBeDefined();
       expect(typeof bp.dibHeader.width.readInt32LE(18,22) === 'number').toBe(true);
       
