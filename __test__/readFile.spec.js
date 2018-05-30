@@ -16,7 +16,7 @@ describe('Reader Module', () => {
 
   it('if there is a good file name throw console.log', () => {
 
-    let file = `${__dirname}/../assets/bitmap.bmp`;
+    let file = `/Users/joshuamcclung/codefellows/401/04-data-modeling-and-binary/assets/bitmap.bmp`;
 
     reader(file, (err) => {
 
@@ -27,7 +27,7 @@ describe('Reader Module', () => {
 
   it('if there is a good file name throw console.log', () => {
 
-    let file = `${__dirname}/../assets/bitmap.bmp`;
+    let file = `/Users/joshuamcclung/codefellows/401/04-data-modeling-and-binary/assets/bitmap.bmp`;
 
     reader(file, (err, buffer) => {
 

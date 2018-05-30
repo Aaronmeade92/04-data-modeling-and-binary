@@ -7,7 +7,7 @@ describe('Parser Module', () => {
 
   it('construct bitmap from buffer', (done) => {
 
-    readFile(`${__dirname}/../assets/bitmap.bmp`, (err, buffer) => {
+    readFile(`/Users/joshuamcclung/codefellows/401/04-data-modeling-and-binary/assets/bitmap.bmp`, (err, buffer) => {
       expect(err).toBeNull();
       const bp = parser(buffer);
       expect(bp).toBeDefined();
