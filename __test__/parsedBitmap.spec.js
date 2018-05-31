@@ -17,7 +17,4 @@ describe('Parser Module', () => {
     });
   });
 
-  // it('should return console log', () => {
-
-  // })
 });

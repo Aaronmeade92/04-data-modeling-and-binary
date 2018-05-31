@@ -1,6 +1,6 @@
 'use strict';
 
-const reader = require('../lib/readFile.js');//?
+const reader = require('../lib/readFile.js');
 
 describe('Reader Module', () => {
   it('if there is a bad file name throw error', () => {

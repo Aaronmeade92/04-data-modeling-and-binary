@@ -9,12 +9,8 @@ describe('Parser Module', () => {
   it('construct bitmap from buffer', (done) => {
 
     readFile(`/Users/joshuamcclung/codefellows/401/04-data-modeling-and-binary/assets/bitmap.bmp`, (err, buffer) => {
-      // expect(err).toBeNull();
-      const bp = parser(buffer);//?
-      // console.log(bp);
-      // console.log(buffer);
+      const bp = parser(buffer);
       const invertedImage = inverter(bp);
-      console.log(invertedImage);
       expect(invertedImage).toBeDefined();
 
       writeFile(`${__dirname}/../assets/new/newBitmap.bmp`, invertedImage);
