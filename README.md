@@ -31,4 +31,4 @@ We also have as a stretch goal to write a CLI for our image transformer.
     * The **parsedBitmap** module, which takes the revealed buffer from the **readFile** module and parses out the sections of the bitmap header we want to have direct access to later on.
 <br>
 
-    * The **inverter** module takes in the revealed data from the **parsedBitmap** module, and in this case simply _inverts_ the pixelArray values and returns them as an _inverted_ array as _invertedImage_.
+    * The **invert** module takes in the revealed data from the **parsedBitmap** module, and in the code are commented out multiple versions of FX to work with, not just invert.
