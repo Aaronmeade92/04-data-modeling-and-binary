@@ -23,7 +23,7 @@ We also have as a stretch goal to write a CLI for our image transformer.
 
 ##  Documentation
 
-* Our App currently consists of **three modules**:
+* Our App currently consists of **four modules**:
     <br>
     * The **readFile** module, which reads an input file path, and on success with an intact file path, strips out the buffer for access and returns it.
 <br>
@@ -32,3 +32,6 @@ We also have as a stretch goal to write a CLI for our image transformer.
 <br>
 
     * The **invert** module takes in the revealed data from the **parsedBitmap** module, and in the code are commented out multiple versions of FX to work with, not just invert.
+<br>
+
+    * The **writeFile** module takes in the buffer from the **invert** module, and writes a new file from that buffer info.
